@@ -19,7 +19,7 @@
   <input id="text_for_receive_sdp" type='hidden'></input>
 </body>
 <script type="text/javascript">
-  let wsUrl = 'ws://localhost:3001/';
+  let wsUrl = 'wss://tsuiphonsig.herokuapp.com';
   let ws = new WebSocket(wsUrl);
   ws.onopen = function(evt) {
     console.log('ws open()');
