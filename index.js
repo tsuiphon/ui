@@ -20,7 +20,7 @@ wsServer.on('connection', function(ws) {
   });
 });
 app.use('/', express.static('pages'));
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(process.env.PORT || 3000, () => console.log('Example app listening on port hoge!'))
  
 function isSame(ws1, ws2) {
   // -- compare object --
